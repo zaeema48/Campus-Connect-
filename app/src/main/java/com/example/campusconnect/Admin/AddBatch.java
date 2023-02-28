@@ -53,7 +53,7 @@ public class AddBatch extends AppCompatActivity {
             public void onClick(View view) {
                 String yr = year.getText().toString();
                 String fees = feesAmount.getText().toString();
-                if(yr!=null && fees!=null && acTextView.isSelected()){
+                if(yr.isEmpty() && fees.isEmpty() && acTextView.isSelected()){
                     batchModel.setCourseName(acTextView.getText().toString());
 //                    batchModel.setCourseDuration(acTextView2.toString());
                     batchModel.setCourseYear(yr);

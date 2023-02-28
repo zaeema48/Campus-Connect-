@@ -32,6 +32,7 @@ public class AddTeacher extends AppCompatActivity {
         fetchView();
 
         TeacherModel teacher = new TeacherModel();
+
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,7 +40,7 @@ public class AddTeacher extends AppCompatActivity {
                 String tsalary= salary.getText().toString();
                 String tsubject = subject.getText().toString();
 
-                if(tname != null && tsalary != null && tsubject!=null){
+                if(tname.isEmpty() && tsalary.isEmpty() && tsubject.isEmpty()){
                     teacher.setTeacherName(tname);
                     teacher.setSalary(tsalary);
                     SubjectModel subject = new SubjectModel();
@@ -48,24 +49,40 @@ public class AddTeacher extends AppCompatActivity {
 
                     List<TeacherScheduleModel> schedules = new ArrayList<>();
                     schedules.get(0).setDay("Monday");
-                    schedules.get(0).setSlot1("B.Tech CSE");
-                    schedules.get(0).setSlot3("B.Tech ESE");
+                    schedules.get(0).setDay("Monday");
+                    schedules.get(0).setSlot1(m1.getText().toString());
+                    schedules.get(0).setSlot2(m2.getText().toString());
+                    schedules.get(0).setSlot3(m3.getText().toString());
+                    schedules.get(0).setSlot4(m4.getText().toString());
+                    schedules.get(0).setSlot5(m5.getText().toString());
 
                     schedules.get(1).setDay("Tuesday");
-                    schedules.get(1).setSlot2("B.Tech CSE");
-                    schedules.get(1).setSlot4("B.Tech ESE");
+                    schedules.get(1).setSlot1(t1.getText().toString());
+                    schedules.get(1).setSlot2(t2.getText().toString());
+                    schedules.get(1).setSlot3(t3.getText().toString());
+                    schedules.get(1).setSlot4(t4.getText().toString());
+                    schedules.get(1).setSlot5(t5.getText().toString());
 
                     schedules.get(2).setDay("Wednesday");
-                    schedules.get(2).setSlot1("B.Tech CSE");
-                    schedules.get(2).setSlot4("B.Tech ESE");
+                    schedules.get(2).setSlot1(w1.getText().toString());
+                    schedules.get(2).setSlot2(w2.getText().toString());
+                    schedules.get(2).setSlot3(w3.getText().toString());
+                    schedules.get(2).setSlot4(w4.getText().toString());
+                    schedules.get(2).setSlot5(w5.getText().toString());
 
                     schedules.get(3).setDay("Thursday");
-                    schedules.get(3).setSlot3("B.Tech CSE");
-                    schedules.get(3).setSlot5("B.Tech ESE");
+                    schedules.get(3).setSlot1(th1.getText().toString());
+                    schedules.get(3).setSlot2(th2.getText().toString());
+                    schedules.get(3).setSlot3(th3.getText().toString());
+                    schedules.get(3).setSlot4(th4.getText().toString());
+                    schedules.get(3).setSlot5(th5.getText().toString());
 
                     schedules.get(4).setDay("Friday");
-                    schedules.get(4).setSlot1("B.Tech CSE");
-                    schedules.get(4).setSlot2("B.Tech ESE");
+                    schedules.get(4).setSlot1(f1.getText().toString());
+                    schedules.get(4).setSlot2(f2.getText().toString());
+                    schedules.get(4).setSlot3(f3.getText().toString());
+                    schedules.get(4).setSlot4(f4.getText().toString());
+                    schedules.get(4).setSlot5(f5.getText().toString());
 
 
                     teacher.setTeacherSchedules(schedules);

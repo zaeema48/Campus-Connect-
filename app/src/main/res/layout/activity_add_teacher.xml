@@ -43,10 +43,10 @@
                 android:layout_marginTop="30dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                android:id="@+id/teacher_name">
 
                 <EditText
-                    android:id="@+id/teacher_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Teacher Name"
@@ -63,10 +63,10 @@
                 android:layout_marginTop="40dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                android:id="@+id/salary">
 
                 <EditText
-                    android:id="@+id/salary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Teacher Salary"
@@ -83,10 +83,10 @@
                 android:layout_marginTop="40dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                android:id="@+id/subject">
 
                 <EditText
-                    android:id="@+id/subject"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Subject Name"

@@ -8,6 +8,7 @@ public class TeacherModel {
     String teacherName;
     String salary;
     SubjectModel subject;
+
     List<TeacherScheduleModel> teacherSchedules;
 
     public TeacherModel() {
